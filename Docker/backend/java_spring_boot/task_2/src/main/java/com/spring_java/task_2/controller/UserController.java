@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @CrossOrigin(origins = "http://192.168.0.6:3000/")
+    @CrossOrigin(origins = "http://localhost:3000/")
     @PostMapping("/signin")
     public String signIn(@RequestBody Map<String, String> userData ){
         String email = userData.get("email");
@@ -26,7 +26,7 @@ public class UserController {
         return userService.signIn(email, password);
     }
 
-    @CrossOrigin(origins = "http://192.168.0.6:3000/")
+    @CrossOrigin(origins = "http://localhost:3000/")
     @PostMapping("/signup")
     public String signUp(@RequestBody Map<String, String> userData){
         String email = userData.get("email");

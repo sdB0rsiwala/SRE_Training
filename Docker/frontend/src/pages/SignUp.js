@@ -21,13 +21,13 @@ export default function SignUp() {
         let apiUrl;
         switch (backend) {
             case 'python':
-            apiUrl = 'http://192.168.0.5:8080/python/signup';
+            apiUrl = 'http://localhost:8080/python/signup';
             break;
             case 'go':
             apiUrl = 'http://localhost:8000/signup_GO';
             break;
             case 'java':
-            apiUrl = 'http://192.168.0.7:8080/java/signup';
+            apiUrl = 'http://localhost:8081/java/signup';
             break;
             default:
             console.error('Please select a valid backend');
