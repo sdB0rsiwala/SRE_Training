@@ -1,0 +1,29 @@
+.cart-item-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    padding-bottom: 15px;
+}
+
+.summary h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.summary hr {
+    margin: 10px 0;
+}
+
+.summary .font-weight-bold {
+    font-weight: 700;
+}
+
+
+.w-auto {
+    width: 50px; /* Adjust as needed */
+    max-width: 80px; /* Ensure the width doesn't exceed 80px */
+    text-align: left; /* Optional: Center text inside the input */
+}

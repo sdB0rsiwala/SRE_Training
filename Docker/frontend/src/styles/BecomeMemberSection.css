@@ -1,0 +1,48 @@
+.become-member-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.become-member-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px 10px;
+}
+
+.become-member-card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.become-member-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.become-member-card h3 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #e60023;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c2001e;
+}

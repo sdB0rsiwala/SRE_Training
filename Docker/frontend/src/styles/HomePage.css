@@ -1,0 +1,246 @@
+/* Navigation Bar Styles */
+.navbar {
+  padding: 20px 10px; /* Adjust padding as needed */
+  position: fixed; /* Ensure it's fixed to the top */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  height: 60px;
+  z-index: 1060; /* Ensure it's above other content */
+  background-color: #f8f9fa;
+  overflow: visible;
+}
+
+/* Title */
+.navbar-brand {
+  padding-left: 30px; /* Adjust padding on the left for the title */
+  font-size: 1.5rem; /* Adjust font size for the title */
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.nav-link {
+  font-size: 1rem; /* Adjust font size for navigation links */
+  padding: 0.5rem 1rem; /* Adjust padding for nav links */
+}
+.nav-link:hover {
+  color: lightblue; /* Color on hover */
+}
+
+/* Icons */
+.nav-icon {
+  font-size: 18px; /* Adjust size of icons */
+}
+
+/* Style for the navbar and search input */
+.nav-item:hover .modal-overlay {
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  transition: width 0.5s ease; /* Smooth transition for the width */
+  width: 30px; /* Initial width */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* Ensure proper positioning */
+}
+
+.search-container.active {
+  width: 200px; /* Expanded width when active */
+}
+
+.search-input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-left: 5px;
+  padding: 5px;
+  outline: none;
+  width: 100%; /* Take full width of the container */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  opacity: 0; /* Initially hidden */
+}
+
+.search-container.active .search-input {
+  opacity: 1; /* Show when active */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+  }
+
+  .nav-item {
+      margin: 0.5rem 0;
+  }
+
+  .nav-link {
+      padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Ensure proper spacing between the navbar and content */
+body {
+  margin: 0; /* Remove default margin */
+  padding-top: 70px; /* Adjust based on navbar height */
+  box-sizing: border-box;
+}
+
+.services-section {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100%;
+  /* height: 400px; Change to auto for responsive height */
+  padding: 20px 0; /* Add padding to give space above and below the section */
+  margin-top: 60px; /*Adjust margin if needed*/
+}
+
+.services-section .container {
+  max-width: 100%;
+  width: 75%;
+  height: 75%;
+  padding: 0 7px; /* Reduce padding to avoid excess margin */
+}
+
+.services-section .row {
+  margin: 0 auto; /* Center row horizontally */
+}
+
+.services-section .col-md-3 {
+  padding: 10px; /* Adjust padding inside columns */
+}
+
+
+@media (max-width: 768px) {
+  .services-section {
+    height: auto; /* Adjust for smaller screens */
+    padding: 10px; /* Reduce padding if needed */
+  }
+}
+/* Footer Section */
+
+/* Footer Section */
+.footer {
+  background-color: #f8f9fa; /* Ensure background color matches */
+  padding: 40px 0; /* Increase top and bottom padding for more height */
+}
+
+.footer-container {
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto; /* Center the container */
+}
+
+.footer h5 {
+  font-size: 1.5rem; /* Increase font size for headings */
+  margin-bottom: 1rem; /* Add some space below headings */
+}
+
+.footer p, .footer ul, .footer li, .footer a {
+  color: #6c757d;
+  font-size: 1rem; /* Increase font size for text */
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 0.75rem; /* Increase margin bottom to reduce gap */
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #6c757d;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Reduce gap between Quick Links and Help & Info */
+@media (min-width: 768px) {
+  .footer .row > div {
+    padding-right: 15px; /* Adjust spacing between columns */
+    padding-left: 15px;
+  }
+
+  .footer .col-md-3:not(:last-child) {
+    border-right: 1px solid #dee2e6; /* Add a border to visually separate sections */
+  }
+
+  .footer .col-md-3:last-child {
+    border-right: none; /* Remove border from the last column */
+  }
+}
+
+
+/* Homepage.css */
+
+/* Modal Styles */
+.custom-modal .modal-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  margin: 1.75rem auto; /* Center the modal horizontally */
+}
+
+.custom-modal .modal-content {
+  border-radius: 0.3rem;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-modal .modal-title {
+  margin: 0;
+}
+
+.custom-modal .btn-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Styling for the modal body */
+.custom-modal .modal-body {
+  padding: 0.75rem;
+}
+
+/* Modal overlay (backdrop) */
+.custom-modal .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darker background for better contrast */
+  z-index: 1040; /* Ensure it's behind the modal */
+}

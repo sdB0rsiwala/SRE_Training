@@ -1,0 +1,13 @@
+{
+    "env": {
+      "browser": true,
+      "worker": true
+    },
+    "globals": {
+      "importScripts": "readonly",
+      "faceapi": "readonly"
+    },
+    "rules": {
+      "no-restricted-globals": ["error", "window", "document"]
+    }
+  }

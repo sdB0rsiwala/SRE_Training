@@ -1,69 +1,36 @@
+/* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary: #bc4123;
-  --secondary: #2b3452;
+  --primary: #bc2337; /* Custom primary color */
+  --secondary: #ffffff; /* Custom background color */
 }
+
 body {
   margin: 0;
-  padding: 20px;
-  font-family: "Poppins";
-  background: var(--secondary);
+  padding: 0;
+  font-family: Arial, sans-serif;/* Ensure Poppins font is applied */
+  background-color: var(--secondary); /* Use custom background color */
+  width: 100%;
 }
+
 * {
-  color: #fff;
+  color: #111010; /* Custom text color */
   margin: 0;
+  box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
 }
+
 p {
   margin: 20px 0;
 }
+
 button {
-  border: 0;
+  border: none; /* Use Bootstrap's button styles */
   padding: 8px;
   border-radius: 4px;
   color: white;
-  background: var(--primary);
+  background-color: var(--primary); /* Custom button background color */
   cursor: pointer;
 }
 
-/* navbar */
-header nav {
-  display: flex;
-  gap: 16px;
-  justify-content: end;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-header nav h1 {
-  margin-right: auto;
-  border-bottom: 3px solid var(--primary);
-  color: #bc4123;
-}
-header nav a{
-  text-decoration: none;
-  padding: 6px;
-  border-radius: 4px;
-}
-header nav a.active {
-  background: var(--primary);
-}
-
-/* page content */
-main {
-  max-width: 1200px;
-  margin: 40px auto;
-}
-
-/* help layout */
-
-
-/* faq */
-
-
-/* careers list */
-
-
-/* careers details */
-
-
-/* breadcrumbs */
+/* Optional: Add any custom Bootstrap overrides here if needed */

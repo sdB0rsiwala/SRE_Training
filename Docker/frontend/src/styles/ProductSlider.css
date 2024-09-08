@@ -1,0 +1,114 @@
+.product-slider {
+  margin: 20px 100px;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 600;
+  position: relative; /* Ensure custom arrows are positioned correctly */
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.slider-header h2 {
+  margin: 0;
+}
+
+.slider-header button {
+  padding: 8px 16px;
+  color: rgb(14, 13, 13);
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-item {
+  text-align: center;
+  padding: 5px;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-name {
+  text-align: left;
+  margin-left: 5px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* Adjust the width as needed */
+}
+
+.product-price {
+  text-align: right;
+  margin-right: 5px;
+}
+
+/* Custom arrows */
+.product-slider-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2; /* Ensure arrows are above the slider */
+}
+
+.product-slider-arrow {
+  background: none; /* Remove background */
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition for arrow color */
+}
+
+.product-slider-arrow svg {
+  fill: lightgrey; /* Arrow color */
+  width: 48px; /* Increase size of arrow */
+  height: 48px; /* Increase size of arrow */
+}
+
+.product-slider-arrow:hover svg {
+  fill: lightblue; /* Hover color */
+}
+
+/* Custom left arrow */
+.product-slider-arrow.left-arrow {
+  position: absolute;
+  left: -60px; /* Move outside the left edge of the slider */
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+/* Custom right arrow */
+.product-slider-arrow.right-arrow {
+  position: absolute;
+  right: -20px; /* Move outside the right edge of the slider */
+  top: 50%;
+  transform: translateY(-50%);
+}
+

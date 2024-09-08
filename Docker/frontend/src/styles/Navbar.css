@@ -1,0 +1,98 @@
+/* Navbar Styles */
+.navbar {
+    padding: 20px 10px; /* Adjust padding as needed */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1060;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .nav-link {
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .nav-icon {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-icon:hover {
+    color: #007bff;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search-input {
+    width: 0;
+    padding: 5px;
+    border: none;
+    outline: none;
+    transition: width 0.3s ease;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .search-input.active {
+    width: 200px;
+  }
+  
+  .custom-modal .modal-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .custom-modal .modal-body {
+    padding: 20px;
+  }
+  
+  .custom-modal .modal-footer {
+    justify-content: flex-end;
+  }
+  
+  /* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    transition: width 0.5s ease; /* Smooth transition for the width */
+    width: 30px; /* Initial width */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Ensure proper positioning */
+  }
+  
+  .search-container.active {
+    width: 200px; /* Expanded width when active */
+  }
+  
+  .search-input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-left: 5px;
+    padding: 5px;
+    outline: none;
+    width: 100%; /* Take full width of the container */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .search-container.active .search-input {
+    opacity: 1; /* Show when active */
+  }

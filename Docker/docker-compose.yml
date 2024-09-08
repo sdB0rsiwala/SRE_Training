@@ -43,14 +43,18 @@ services:
   
   backend_python:
     build:
-      context: ./backend/python
-      dockerfile: dockerfile.python
+      context: ./backend/django_backend
+      dockerfile: dockerfile.django
     command: python manage.py runserver 0.0.0.0:8080
     ports:
       - 8080:8080
     container_name: python-django
     depends_on:
       - db
+    env_file:
+      - ./.env
+    restart: always
+
 
   frontend:
     container_name: react

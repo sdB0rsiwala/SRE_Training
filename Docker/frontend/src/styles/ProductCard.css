@@ -1,0 +1,46 @@
+.product-card {
+    width: 16rem; /* Slightly reduced card size */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for a more prominent effect */
+}
+
+.card-image-section img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-name {
+    font-size: 1rem; /* Reduced font size for product name */
+    font-weight: bold;
+    text-align: left; /* Align the name to the left */
+}
+
+.product-price {
+    font-size: 0.9rem; /* Reduced font size for product price */
+    color: #555;
+    text-align: left; /* Align the price to the left */
+    margin-top: 5px; /* Optional: Add some margin to separate from the name */
+}
+
+
+/* ProductCard.css */
+.product-card-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the link block-level so the entire card is clickable */
+}
+
+.product-card-link:hover .product-card {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+    transform: scale(1.02); /* Slightly scale up the card on hover */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
+}

@@ -1,0 +1,27 @@
+/* Container for the entire page */
+.product-detail-wrapper {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style for the image container */
+.product-image-container {
+    flex: 1; /* Takes up 50% of the width */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: lightgray; /* Background color for the image container */
+}
+
+/* Style for the image */
+.product-image {
+    width: 80%; /* Image covers 80% of the image container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the details container */
+.product-details-container {
+    flex: 1; /* Takes up 50% of the width */
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
